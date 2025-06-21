@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- <div class="animacoes"> -->
+    <img src="../imgs/bars-solid.svg" alt="menu" class="img-menu" />
+    <a href="../index.php"><img src="../imgs/www.orbia.com.br.jpg" alt="" style="margin-right: 40px;width: 190px;"></a>
+    <div class="pesquise">
+      <input type="text" placeholder=" Pesquise no Orbia" class="campoPesquisa" style="display: none;" />
+    </div>
+    <div class="login">
+      <img src="../imgs/user-solid.svg" alt="user-login" class="user-login" />
+      <div class="login-opcoes">
+        <span class="login-opcoes-titulo-ou">
+          <a style="text-decoration: none;color:#9b7fb6;" href="login.php" class="login-opcoes-titulo">ENTRE</a>
+          <span style="color:#9b7fb6;">ou</span>
+        </span>
+        <span class="login-opcoes2">
+          <a style="text-decoration: none;color:#9b7fb6;" href="cadastro.php">CADASTRE-SE</a>
+        </span>
+      </div>
+
+    </div>
+    <div class="carrinho" style="display: none;"><img src="../imgs/carrinho.svg" /></div>
+    <div class="favoritos" style="display: none;"><img src="../imgs/coracao.svg" /></div>
+    <div class="doacao" style="display: none;"><img src="../imgs/presente.svg" /></div>
+    <!-- </div> -->
+  </header>
+  <main class="main">
+
+    <div class="formLogin">
+      <div class="google-brands-alinhamento">
+        <button type="button" class="border-google">
+          <img src="../imgs/google-brands.svg" width="21px" style="padding-right: 10px;">
+          <span class="google-brands-bold">Cadastrar com o
+            <b class="google-brands-bold">Google</b></span>
+        </button>
+
+        <button type="button" class="border-facebook">
+          <img src="../imgs/square-facebook-brands.svg" width="21px" style="padding-right: 10px;">
+          <span class="google-brands-bold2">Cadastrar com o
+            <b class="google-brands-bold2">Facebook</b></span>
+        </button>
+      </div>
+
+      <div class="hr">
+        <hr>ou
+        <hr>
+      </div>
+      <form action="processar_cadastro.php" method="post" class="form">
+        <div class="area">
+          <input type="text" name="nome_completo" required class="campoCadastro input">
+          <div class="labelline">Nome Completo*</div>
+        </div>
+
+        <div class="area">
+          <input type="text" name="cpf" required class="campoCadastro input" minlength="11" maxlength="11">
+          <div class="labelline">CPF*</div>
+        </div>
+
+        <div class="custom-select">
+          <select name="genero" required>
+            <option selected disabled></option>
+            <option disabled>Gênero*</option>
+            <option>Homem</option>
+            <option>Mulher</option>
+            <option>Outros</option>
+            <option>Prefiro não dizer</option>
+            <option>Não binário</option>
+            <option>Agênero</option>
+            <option>Bigênero</option>
+            <option>Outro...</option>
+          </select>
+        </div>
+
+        <div class="area">
+          <input type="date" name="data_nascimento" required class="campoCadastro input">
+          <div class="labelline">Data de Nascimento*</div>
+        </div>
+
+        <div class="area">
+          <input type="tel" name="telefone" required class="campoCadastro input" maxlength="14" minlength="8">
+          <div class="labelline">Telefone celular*</div>
+        </div>
+
+        <div class="area">
+          <input type="email" name="email" required class="campoCadastro input">
+          <div class="labelline">E-mail*</div>
+        </div>
+
+        <div class="area">
+          <input type="password" name="senha" required class="campoCadastro input">
+          <div class="labelline">Senha*</div>
+        </div>
+
+        <div class="area">
+          <input type="password" name="confirmar_senha" required class="campoCadastro input">
+          <div class="labelline">Confirme Senha*</div>
+        </div>
+
+        <div class="custom-select campoConhece">
+          <select name="conheceu">
+            <option selected disabled></option>
+            <option disabled>Onde você conheceu a Orbia!</option>
+            <option>Youtube</option>
+            <option>Google</option>
+            <option>Indicação de amigo</option>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>Twitter</option>
+            <option>Outro...</option>
+          </select>
+        </div>
+
+        <p style="font-size: small;font-weight: bold;color:#d3c6e1;">(*) Campos obrigatórios</p><br>
+
+        <div class="checkbox">
+          <label class="checkbox-custom">
+            <input type="checkbox" name="ofertas" value="sim">
+            <span class="checkmark"></span>
+            Quero receber ofertas e novidades por e-mail
+          </label>
+
+          <label class="checkbox-custom">
+            <input type="checkbox" name="politicas" value="sim" required>
+            <span class="checkmark"></span>
+            Li e estou de acordo com as políticas da empresa e políticas de privacidade.*
+          </label>
+        </div>
+
+        <div class="btnEnviar">
+          <input type="submit" value="CONTINUAR" class="campoCadastro btnEnviar2">
+        </div>
+      </form>
+
+
+      <p style="font-size: small;color:#d3c6e1;">Já possui cadastro? <a class="ancora-entrar" href="login.php">Entrar</a></p>
+    </div>
+
+  </main>
+</body>
+
+</html>
