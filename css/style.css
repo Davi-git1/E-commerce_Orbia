@@ -22,6 +22,12 @@ body{
     background-image: url("../imgs/backgroudOrbia.jpg");
     background-size: cover;
     background-position: center;
+    
+}
+
+.imgOrbia{
+    margin-right: 40px;
+    width: 190px;
 }
 
 .menu-toggle{
@@ -75,6 +81,7 @@ header {
     justify-content: center;
     position:static;
     z-index: 1111;
+    position: relative;
 }
 .espaco{
     height: 150px;
@@ -185,6 +192,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.blurIndex{
+    backdrop-filter: blur(5px);
 }
 
 .anima-borda {
@@ -649,7 +660,7 @@ a:hover {
 }
 
 .checkbox-custom input:checked~.checkmark {
-    background-color: #2b1d35;
+    background-color: #604874;
 
 }
 
@@ -925,14 +936,14 @@ footer{
         /* object-fit: cover; */
     }
 }
-@media (max-width:857px) and (min-width:0px) {
+@media (max-width:857px) and (min-width:428px) {
     nav{
         display: none;
     }
     .animacoes{
         width: 100%;
         height: 100%;
-        background-color: #202020;
+        background-color: #f7f7f7;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -944,11 +955,66 @@ footer{
         background-color: #f7f7f7;
     }
     .swiperButtonOferta{
-    width: 100%;
-    background-color: #303030;
-    overflow: hidden;
-    border-radius: 5px;
-    position: relative;
-}
+        width: 100%;
+        background-color: #303030;
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+    }
+    .menu-toggle,.login-opcoes{
+        display: none;
+    }
+    .imgOrbia{
+        width: 80px;
+        margin-right: 5%;
+    }
+    .img-menu{
+        margin-right: 5%;
+    }
+    .user-login{
+        margin-right: 5%;
+    }
     
+}
+
+@media (max-width:427px) and (min-width:0px) {
+    nav{
+        display: none;
+    }
+    .animacoes{
+        width: 100%;
+        height: 100%;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .doacao,.favoritos,.carrinho{
+        display: none;
+    }
+    #meuHeader{
+        background-color: #f7f7f7;
+    }
+    .swiperButtonOferta{
+        width: 100%;
+        background-color: #303030;
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+    }
+    .menu-toggle,.login-opcoes{
+        display: none;
+    }
+    .imgOrbia{
+        display: none;
+    }
+    .img-menu{
+        margin-right: 5%;
+    }
+    .user-login{
+        margin: 0;
+    }
+    .login{
+        margin-left: 5%;
+    }
 }

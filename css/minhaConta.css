@@ -4,7 +4,7 @@
     font-family: "Open Sans", sans-serif;
     padding: 0;
     margin: 0;
-    color: #202020;
+    color: #2b1d35;
 }
 
 .menu-container {
@@ -60,7 +60,8 @@
 header {
     width: 100%;
     height: 100px;
-    background-color: #604874;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +73,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
   z-index: 1000;
 }
 
@@ -98,13 +99,13 @@ nav {
     border: gray;
     display: flex;
     justify-content: center;
-    background-color: #6a517a;
+    background-color: #9b7fb6;
     width: 100%;
     min-width: 200px;
 }
 
 input::placeholder {
-    color: #202020;
+    color: #2b1d35;
     opacity: 1;
 }
 
@@ -119,8 +120,8 @@ main {
     height: auto;
     display: flex;
     align-items: center;
-    background-color: #3b3b3b;
     flex-direction: column;
+    
 }
 
 .main {
@@ -128,7 +129,7 @@ main {
     height: auto;
     display: flex;
     align-items: center;
-    background-color: #3b3b3b;
+    background-color: #f1f1f1;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -171,7 +172,7 @@ main {
 .animacoes {
     width: 100%;
     height: 100%;
-    background-color: #202020;
+    background-color: #f7f7f7;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 60%;
     border-top-right-radius: 60%;
@@ -708,7 +709,7 @@ hr{
 footer{
     width: 100%;
     height: 400px;
-    background-color: #202020;
+    background-color: #f7f7f7;
 
 }
 .footer{
@@ -772,7 +773,7 @@ footer{
   .next { right: 10px; }
 
 .dados{
-    background-color: #575757;
+    background-color: #9b7fb6;
     width: 80%;
     height: 70px;
     padding: 20px;
@@ -780,11 +781,11 @@ footer{
     align-items: center;
     font-weight: bold;
     margin-top: 35px;
-    box-shadow: -1px 2px 10px #202020;
+    box-shadow: -1px 2px 10px #9b7fb6;
 
 }
 .dados2{
-    background-color: #575757;
+    background-color: #9b7fb6;
     width: 80%;
     height: 70px;
     padding: 20px;
@@ -814,7 +815,7 @@ footer{
     margin-right: 30px;
     font-size: 15px;
     font-weight:900;
-    color: gray;
+    color: #9b7fb6;
     border: none;
 }
 .dadosPensilRoxo{
@@ -824,7 +825,7 @@ footer{
 }
 .editarDados:hover{
     color: rgb(99, 19, 99);
-    background-color: gray;
+    background-color: #9b7fb6;
     border: 1px solid #3b3b3b;
 }
 
@@ -850,14 +851,15 @@ footer{
     
 }
 .meuspedidos,.favorito,.chamados,.meusDados,.carteira,.avaliacoes {
-    background-color: #575757;
+    background-color: #9b7fb6;
+    color: #2b1d35;
     width: auto;
     height: 100px;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: -1px 2px 10px #202020;
+    box-shadow: -1px 2px 10px #9b7fb6;
 }
 .menu span{
     font-weight: 900;
@@ -894,7 +896,7 @@ footer{
     margin-top: 25px;
     width: 82%;
     background-color: #575757;
-    box-shadow: -1px 2px 10px #202020;
+    box-shadow: -1px 2px 10px #9b7fb6;
     margin-bottom: 35px;
 
 }
@@ -903,21 +905,23 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 15px 10px 15px 10px;
-    border-bottom: solid 1px #3b3b3b;
+    border-bottom: solid 1px #2b1d35;
+    background-color: #9b7fb6;
 }
 .status{
     font-size: small;
     padding: 5px 5px 5px 10px;
     color: yellow;
     font-weight: bold;
-    border-bottom: solid 1px #3b3b3b;
-    opacity: 0.7;
+    border-bottom: solid 1px #2b1d35;
+    background-color: #9b7fb6;
 }
 .formaPagamento{
     font-size: small;
     padding: 5px 5px 5px 10px;
     font-weight: bold;
     border-bottom: solid 1px #3b3b3b;
+    background-color: #9b7fb6;
 }
 .numPedido input{
     background-color: rgb(99, 19, 99);
@@ -927,23 +931,24 @@ footer{
     border-radius: 8px;
     font-size: 15px;
     font-weight:900;
-    color: gray;
+    color: #9b7fb6;
     border: none;
     border: 1px solid rgb(99, 19, 99);
 }
 .numPedido input:hover{
     color: rgb(99, 19, 99);
-    background-color: gray;
-    border: 1px solid #3b3b3b;
+    background-color: #9b7fb6;
+    border: 1px solid #2b1d35;
 }
 .produto{
     display: flex;
+    background-color: #9b7fb6;
     
 }
 .imgProduto{
     width: 80px;
     height: 80px;
-    border: solid 1px #3b3b3b;
+    border: solid 1px #2b1d35;
     margin: 15px;
 }
 
@@ -954,6 +959,7 @@ footer{
 }
 .vendidoEntregue{
     margin-bottom: 5px;
+    background-color: #9b7fb6;
 }
 .nomeProduto{
     margin-bottom: 5px;
@@ -963,7 +969,7 @@ footer{
     padding: 1px;
     border-radius: 3px;
     font-size: small;
-    background-color: #4e4e4e;
+    background-color: #9b7fb6;
     
 }
 .orbia{

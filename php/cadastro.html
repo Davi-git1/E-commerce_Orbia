@@ -57,19 +57,18 @@
       </div>
       <form action="processar_cadastro.php" method="post" class="form">
         <div class="area">
-          <input type="text" name="nome_completo" required class="campoCadastro input">
+          <input type="text" name="nome_completo" required class="campoCadastro input" placeholder="Digite seu nome completo*">
           <div class="labelline">Nome Completo*</div>
         </div>
 
         <div class="area">
-          <input type="text" name="cpf" required class="campoCadastro input" minlength="11" maxlength="11">
+          <input type="text" name="cpf" required class="campoCadastro input" minlength="11" maxlength="11" placeholder="Digite seu CPF*">
           <div class="labelline">CPF*</div>
         </div>
 
         <div class="custom-select">
           <select name="genero" required>
-            <option selected disabled></option>
-            <option disabled>Gênero*</option>
+            <option selected disabled>Gênero*</option>
             <option>Homem</option>
             <option>Mulher</option>
             <option>Outros</option>
@@ -87,29 +86,28 @@
         </div>
 
         <div class="area">
-          <input type="tel" name="telefone" required class="campoCadastro input" maxlength="14" minlength="8">
+          <input type="tel" name="telefone" required class="campoCadastro input" maxlength="14" minlength="8" placeholder="Digite seu celular*">
           <div class="labelline">Telefone celular*</div>
         </div>
 
         <div class="area">
-          <input type="email" name="email" required class="campoCadastro input">
+          <input type="email" name="email" required class="campoCadastro input" placeholder="Digite seu e-mail*">
           <div class="labelline">E-mail*</div>
         </div>
 
         <div class="area">
-          <input type="password" name="senha" required class="campoCadastro input">
+          <input type="password" name="senha" required class="campoCadastro input" placeholder="Digite a senha*">
           <div class="labelline">Senha*</div>
         </div>
 
         <div class="area">
-          <input type="password" name="confirmar_senha" required class="campoCadastro input">
+          <input type="password" name="confirmar_senha" required class="campoCadastro input" placeholder="Confirme a senha*">
           <div class="labelline">Confirme Senha*</div>
         </div>
 
         <div class="custom-select campoConhece">
           <select name="conheceu">
-            <option selected disabled></option>
-            <option disabled>Onde você conheceu a Orbia!</option>
+            <option selected disabled>Onde você conheceu a Orbia!</option>
             <option>Youtube</option>
             <option>Google</option>
             <option>Indicação de amigo</option>
