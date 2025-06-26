@@ -43,31 +43,36 @@ body{
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: gray;
-  color: black;
+  color: #9b7fb6;
   border-radius: 8px;
+  background-color: #eae6ed;
   padding: 10px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1111 !important;
   min-width: 180px;
 }
-
+.dropdown-menu img{
+    padding-bottom: 8px;
+}
 
 .menu-container:hover .dropdown-menu {
   display: block;
   z-index: 1111 !important;
+  background-color: #eae6ed;
 }
 
 .dropdown-menu a {
   text-decoration: none;
   display: block;
-  padding: 8px;
-  color: orange;
+  padding: 4px;
+  color: #9b7fb6;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .dropdown-menu a:hover {
-  background-color: #f1f1f1;
+  background-color: #d3c6e1;
+  color: #6a517a;
 }
 
 
